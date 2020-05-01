@@ -1,4 +1,17 @@
-<div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="container">
+  <ion-slides #slides>
+    <ion-slide *ngFor="let item of routineList?.routine">
+      <ion-card (click)="pronounce(item.text)">
+        <img [src]="item.url" [alt]="item.text" />
+        <div class="title-wrapper">
+          <div class="card-title">{{ item.text }}</div>
+        </div>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <div class="nav-button-area">
+    <ion-icon name="arrow-back" (click)="previousSlide()"></ion-icon>
+    <ion-icon name="arrow-forward" (click)="nextSlide()"></ion-icon>
+  </div>
+
 </div>

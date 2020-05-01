@@ -1,27 +1,43 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.container {
+  height: 90%;
 }
 
 #container a {
   text-decoration: none;
+}
+
+ion-slides {
+  height: 100%;
+}
+
+ion-card {
+  height: 80%;
+  width: 100%;
+}
+
+.nav-button-area {
+  width: 100%;
+  text-align: center;
+}
+
+ion-icon {
+  color: white;
+  font-size: 40px;
+  width: 25%;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+.card-title {
+  font-size: 28px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
 }

@@ -1,0 +1,119 @@
+{
+    "routine": [
+        {
+            "id": 1,
+            "url": "assets/images/1.png",
+            "text": "Wake up time"
+        },
+        {
+            "id": 2,
+            "url": "assets/images/2.png",
+            "text": "Brushing time"
+        },
+        {
+            "id": 3,
+            "url": "assets/images/3.png",
+            "text": "Toileting time"
+        },
+        {
+            "id": 4,
+            "url": "assets/images/4.png",
+            "text": "Bathing time"
+        },
+        {
+            "id": 5,
+            "url": "assets/images/5.png",
+            "text": "Breakfast time"
+        },
+        {
+            "id": 6,
+            "url": "assets/images/6.png",
+            "text": "Work time"
+        },
+        {
+            "id": 7,
+            "url": "assets/images/7.png",
+            "text": "Playing time - Indoor"
+        },
+        {
+            "id": 8,
+            "url": "assets/images/8.png",
+            "text": "Lunch time"
+        },
+        {
+            "id": 9,
+            "url": "assets/images/9.png",
+            "text": "Playing time - Outdoor"
+        },
+        {
+            "id": 10,
+            "url": "assets/images/10.png",
+            "text": "TV time"
+        },
+        {
+            "id": 11,
+            "url": "assets/images/11.png",
+            "text": "Snack time"
+        },
+        {
+            "id": 12,
+            "url": "assets/images/12.png",
+            "text": "Playing time - Outdoor"
+        },
+        {
+            "id": 13,
+            "url": "assets/images/13.png",
+            "text": "Undressing time"
+        },
+        {
+            "id": 14,
+            "url": "assets/images/14.png",
+            "text": "Dressing time"
+        },
+        {
+            "id": 15,
+            "url": "assets/images/15.png",
+            "text": "School time"
+        },
+        {
+            "id": 16,
+            "url": "assets/images/16.png",
+            "text": "Computer time"
+        },
+        {
+            "id": 17,
+            "url": "assets/images/17.png",
+            "text": "Haircut time"
+        },
+        {
+            "id": 18,
+            "url": "assets/images/18.png",
+            "text": "Music time"
+        },
+        {
+            "id": 19,
+            "url": "assets/images/19.png",
+            "text": "Painting time"
+        },
+        {
+            "id": 20,
+            "url": "assets/images/20.png",
+            "text": "Outing time"
+        },
+        {
+            "id": 21,
+            "url": "assets/images/21.png",
+            "text": "Shopping time"
+        },
+        {
+            "id": 22,
+            "url": "assets/images/22.png",
+            "text": "Dinner time"
+        },
+        {
+            "id": 23,
+            "url": "assets/images/23.png",
+            "text": "Sleeping time"
+        }
+    ]
+}
