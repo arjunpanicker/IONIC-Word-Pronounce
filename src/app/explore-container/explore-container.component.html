@@ -1,17 +1,31 @@
-<div class="container">
+<div class="container" *ngIf="routineList?.routine.length; else nothingContainer">
   <ion-slides #slides>
     <ion-slide *ngFor="let item of routineList?.routine">
-      <ion-card (click)="pronounce(item.text)">
-        <img [src]="item.url" [alt]="item.text" />
-        <div class="title-wrapper">
-          <div class="card-title">{{ item.text }}</div>
+      <ion-card>
+        <ion-icon name="heart-outline" *ngIf="!item.favourite" class="favourite-icon" (click)="toggleFavourite(item)">
+        </ion-icon>
+        <ion-icon name="heart" class="favourite-icon color-red" *ngIf="item.favourite" (click)="toggleFavourite(item)">
+        </ion-icon>
+
+        <div (click)="pronounce(item.text)" [ngClass]="{'no-click': !clickable}">
+          <img [src]="item.url" [alt]="item.text" />
+          <div class="title-wrapper">
+            <div class="card-title">{{ item.text }}</div>
+          </div>
         </div>
       </ion-card>
     </ion-slide>
   </ion-slides>
   <div class="nav-button-area">
-    <ion-icon name="arrow-back" (click)="previousSlide()"></ion-icon>
-    <ion-icon name="arrow-forward" (click)="nextSlide()"></ion-icon>
+    <ion-icon name="chevron-back-circle-outline" class="left-icon" (click)="previousSlide()"></ion-icon>
+    <ion-icon name="chevron-forward-circle-outline" class="right-icon" (click)="nextSlide()"></ion-icon>
   </div>
-
 </div>
+
+<ng-template #nothingContainer>
+  <div class="container nothing-center">
+    <div class="item-center nothing-color">
+      There are no routines here!
+    </div>
+  </div>
+</ng-template>

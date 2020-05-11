@@ -6,4 +6,5 @@ export interface IBoyRoutine {
     id: number;
     url: string;
     text: string;
+    favourite: boolean;
 }

@@ -12,23 +12,42 @@ ion-slides {
 
 ion-card {
   height: 80%;
-  width: 100%;
+  width : 100%;
+}
+
+.favourite-icon {
+  float    : right;
+  position : relative;
+  font-size: 40px;
+  color: grey;
+  z-index: 2;
+}
+
+.no-click {
+  pointer-events:none
+}
+
+.color-red {
+  color: red;
 }
 
 .nav-button-area {
-  width: 100%;
+  margin-top: 20px;
+}
+
+.nav-button-area {
+  width     : 100%;
   text-align: center;
 }
 
 ion-icon {
-  color: white;
-  font-size: 40px;
-  width: 25%;
+  color    : rgb(27, 132, 236);
+  font-size: 70px;
 }
 
 img {
   height: 50%;
-  width: 50%;
+  width : 50%;
 }
 
 .card-title {
@@ -36,8 +55,33 @@ img {
 }
 
 .title-wrapper {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  height: 30%;
+  align-items    : center;
+  height         : 30%;
+}
+
+.left-icon {
+  margin-right: 15px;
+}
+
+.right-icon {
+  margin-left: 15px;
+}
+
+.nothing-center {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  height         : 100% !important;
+  width          : 100%;
+}
+
+.nothing-color {
+  color    : gray;
+  font-size: 40px;
+}
+
+.item-center {
+  text-align: center;
 }

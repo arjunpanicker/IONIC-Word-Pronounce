@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { IBoyRoutineList } from '../models/boy_routine.model';
+import { IBoyRoutineList } from '../../models/boy_routine.model';
 
 @Component({
   selector: 'app-tab1',
@@ -9,15 +9,15 @@ import { IBoyRoutineList } from '../models/boy_routine.model';
 })
 export class Tab1Page implements OnInit {
 
-  public boyRoutineData: IBoyRoutineList;
+  public routineData: IBoyRoutineList;
 
   constructor(
     private _http: HttpClient
   ) {}
 
   public ngOnInit() {
-    this._http.get('assets/json/boy_routine.json').subscribe((data: IBoyRoutineList) => {
-      this.boyRoutineData = data;
+    this._http.get('assets/json/boy_routine.json').subscribe((data: IAlphabetList) => {
+      this.routineData = data;
     });
   }
 

@@ -5,11 +5,15 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ionic serve",
+    "build": "npm run lint && ionic build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "copy:res": "cp -rf ~/Downloads/ApeToolsGeneratedAssets/bundle/android/* ./android/app/src/main/res/",
+    "remove-old": "sudo rm -rf android && sudo rm -rf www",
+    "gen:android": "npx cap add android",
+    "android": "npm run build && sudo npx cap open android"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +37,7 @@
     "cordova-plugin-tts": "^0.2.3",
     "core-js": "^3",
     "es6-promise-plugin": "^4.2.2",
+    "ionicons": "^5.0.1",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
