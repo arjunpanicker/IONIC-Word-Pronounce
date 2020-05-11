@@ -22,19 +22,19 @@ export class FavouritesService {
 
   /**
    * This method adds a letter object
-   * @param letter Letter object to be added
+   * @param routine Letter object to be added
    */
-  public addTofavourite(letter: IBoyRoutine): void {
-    this._favouriteRoutineList.routine.push(letter);
+  public addTofavourite(routine: IBoyRoutine): void {
+    this._favouriteRoutineList.routine.push(routine);
     this.favouriteRoutines.next(this._favouriteRoutineList);
   }
 
   /**
    * This method removes a letter object
-   * @param letter Letter object to be removed
+   * @param routine Letter object to be removed
    */
-  public removeFromFavourites(letter: IBoyRoutine): void {
-    this._favouriteRoutineList.routine.splice(this._favouriteRoutineList.routine.indexOf(letter), 1);
+  public removeFromFavourites(routine: IBoyRoutine): void {
+    this._favouriteRoutineList.routine.splice(this._favouriteRoutineList.routine.indexOf(routine), 1);
     this.favouriteRoutines.next(this._favouriteRoutineList);
   }
 }
