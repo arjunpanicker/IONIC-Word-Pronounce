@@ -2,7 +2,7 @@ import { AfterViewInit, ChangeDetectionStrategy, Component, Input, QueryList, Vi
 import { AlertController, IonSlides, ToastController } from '@ionic/angular';
 import { IBoyRoutine, IBoyRoutineList } from '../models/boy_routine.model';
 import { FavouritesService } from '../_services/favourites.service';
-import { TextToSpeechService } from '../_services/utility_Services/text-to-speech.service';
+import { TextToSpeechService } from '../_services/utility_services/text-to-speech.service';
 
 @Component({
   selector: 'app-explore-container',
