@@ -25,7 +25,9 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
+      if (this.platform.is('android') || this.platform.is('ios')) {
+        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
+      }
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });

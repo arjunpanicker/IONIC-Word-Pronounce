@@ -16,8 +16,8 @@ export class Tab2Page implements OnInit {
   ) {}
 
   public ngOnInit() {
-    this.favouriteRoutine = this._favouritesService.favouriteLettersList;
-    this._favouritesService.favouriteLetters.subscribe((favList) => {
+    this.favouriteRoutine = this._favouritesService.favouriteRoutinesList;
+    this._favouritesService.favouriteRoutines.subscribe((favList) => {
       this.favouriteRoutine = favList;
     });
   }

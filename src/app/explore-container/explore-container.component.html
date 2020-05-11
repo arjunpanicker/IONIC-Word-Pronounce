@@ -7,7 +7,7 @@
         <ion-icon name="heart" class="favourite-icon color-red" *ngIf="item.favourite" (click)="toggleFavourite(item)">
         </ion-icon>
 
-        <div (click)="pronounce(item.text)" [ngClass]="{'no-click': !clickable}">
+        <div class="main-content" (click)="pronounce(item.text)" [ngClass]="{'no-click': !clickable}">
           <img [src]="item.url" [alt]="item.text" />
           <div class="title-wrapper">
             <div class="card-title">{{ item.text }}</div>

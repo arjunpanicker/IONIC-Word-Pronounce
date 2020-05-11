@@ -1,15 +1,13 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServicesModule } from './_services/services.module';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,12 +17,12 @@ import { ServicesModule } from './_services/services.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
-    ServicesModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    TextToSpeech
   ],
   bootstrap: [AppComponent]
 })

@@ -16,7 +16,7 @@ export class Tab1Page implements OnInit {
   ) {}
 
   public ngOnInit() {
-    this._http.get('assets/json/boy_routine.json').subscribe((data: IAlphabetList) => {
+    this._http.get('assets/json/boy_routine.json').subscribe((data: IBoyRoutineList) => {
       this.routineData = data;
     });
   }

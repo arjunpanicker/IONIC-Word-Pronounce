@@ -81,7 +81,7 @@ export class ExploreContainerComponent implements AfterViewInit {
   public toggleFavourite(letter: IBoyRoutine) {
     if (!letter.favourite) {
       letter.favourite = !letter.favourite;
-      this._favouriteService.addTofavouriteLetters(letter);
+      this._favouriteService.addTofavourite(letter);
     } else {
       this.showAlert(letter);
     }
