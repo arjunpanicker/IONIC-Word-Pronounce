@@ -6,14 +6,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ionic serve",
-    "build": "npm run lint && ionic build",
+    "build": "npm run lint && ionic build --prod && npm run gen:android",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "copy:res": "cp -rf ~/Downloads/ApeToolsGeneratedAssets/bundle/android/* ./android/app/src/main/res/",
-    "remove-old": "sudo rm -rf android && sudo rm -rf www",
+    "remove-old": "sudo rm -rf android && sudo rm -rf www && sudo rm -rf resources/android",
     "gen:android": "npx cap add android",
-    "android": "npm run build && npm run gen:android && sudo npx cap open android"
+    "resources": "capacitor-resources -p android && node resources/resources.js",
+    "android": "npm run remove-old && npm run build && npm run resources && sudo npx cap open android"
   },
   "private": true,
   "dependencies": {

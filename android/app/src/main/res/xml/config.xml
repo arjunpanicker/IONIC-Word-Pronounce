@@ -11,5 +11,8 @@
     <param name="onload" value="true"/>
   </feature>
 
+  <widget android-packageName="com.package.app.android" android-versionCode="1000" id="com.package.app" version="2.0" xmlns="w3.org/ns/widgets" xmlns:cdv="cordova.apache.org/ns/1.0">
+  </widget>
+
   
 </widget>
